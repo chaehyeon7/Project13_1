@@ -3,44 +3,46 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="10dp"
-    tools:context=".MainActivity">
+    android:layout_weight="10"
+    android:layout_height="match_parent"
+    tools:context="MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="6"
-        android:orientation="vertical">
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="17">
         <ListView
             android:id="@+id/list1"
-            android:background="#8ADDE4"
+            android:background="#DBEAC9"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
+
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:gravity="center_horizontal"
-        android:layout_weight="1">
+        android:layout_height="0dp"
+        android:padding="5dp"
+        android:layout_weight="2">
         <Button
             android:id="@+id/btn_start"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_marginRight="10dp"
-            android:text="@string/btn_start"/>
+            android:text="@string/btn_start"
+            android:layout_height="wrap_content"/>
         <Button
             android:id="@+id/btn_stop"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/btn_stop"/>
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/btn_stop"
+            android:layout_height="wrap_content"/>
     </LinearLayout>
     <LinearLayout
-        android:padding="10dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:orientation="horizontal"
         android:layout_weight="1">
         <TextView
